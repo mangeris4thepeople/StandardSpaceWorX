@@ -5,8 +5,8 @@ SITE = "https://standardspaceworx.space"
 LASTMOD = "2026-10-22"
 
 # Analytics IDs. Leave empty to omit the tags entirely.
-GTM_ID = ""
-GA4_ID = ""
+GTM_ID = "GTM-KJL5BQST"
+GA4_ID = "G-1L9ERGHXLM"
 
 ORG = {
     "name": "Standard SpaceWorX",
