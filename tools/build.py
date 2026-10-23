@@ -51,10 +51,14 @@ def breadcrumb_schema(crumbs):
 def gtm_head():
     if not GTM_ID:
         return ""
+    # The container is injected after the window load event so the tag payload
+    # does not compete with the hero render on slow mobile connections.
     return (
-        "<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});"
-        "var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;"
-        "j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})"
+        "<script>window.dataLayer=window.dataLayer||[];"
+        "(function(w,d,s,l,i){function g(){w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});"
+        "var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;"
+        "j.src='https://www.googletagmanager.com/gtm.js?id='+i;f.parentNode.insertBefore(j,f);}"
+        "if(d.readyState==='complete'){g();}else{w.addEventListener('load',g);}})"
         "(window,document,'script','dataLayer','" + GTM_ID + "');</script>\n"
     )
 
