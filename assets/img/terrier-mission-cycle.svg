@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" role="img" aria-labelledby="t d">
+  <title id="t">Terrier mission cycle</title>
+  <desc id="d">Six step loop around Earth: park, wake, phase, capture, dispose, return. The Terrier is retained after every loop.</desc>
+  <defs>
+    <radialGradient id="pl" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#2A3B6E"/><stop offset="1" stop-color="#101836"/></radialGradient>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#E8641B"/></marker>
+  </defs>
+  <rect width="1200" height="520" fill="#0B1020"/>
+  <g fill="none" stroke="#26304F" stroke-width="1" opacity=".6">
+    <path d="M0 60H1200M0 130H1200M0 200H1200M0 270H1200M0 340H1200M0 410H1200M0 480H1200"/>
+  </g>
+  <circle cx="300" cy="260" r="110" fill="url(#pl)" stroke="#33406B"/>
+  <text x="300" y="266" text-anchor="middle" font-family="Barlow Condensed, Arial Narrow, Arial, sans-serif" font-size="18" letter-spacing="4" fill="#A3AFCB">EARTH</text>
+  <circle cx="300" cy="260" r="215" fill="none" stroke="#CADCFC" stroke-width="1.5" stroke-dasharray="6 7" opacity=".7"/>
+  <circle cx="300" cy="260" r="180" fill="none" stroke="#E8641B" stroke-width="1.5" stroke-dasharray="4 7" opacity=".7"/>
+  <text x="300" y="36" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="14" fill="#A3AFCB">PARKING ORBIT 865 km</text>
+  <text x="300" y="470" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="14" fill="#E8641B">PHASING ORBIT, 25 km LOWER</text>
+  <circle cx="300" cy="45" r="8" fill="#E8641B"/>
+  <text x="318" y="50" font-family="Barlow Condensed, Arial Narrow, Arial, sans-serif" font-size="18" fill="#F4F7FF" letter-spacing="1">TERRIER</text>
+  <circle cx="470" cy="150" r="7" fill="#CADCFC"/>
+  <text x="484" y="145" font-family="Barlow Condensed, Arial Narrow, Arial, sans-serif" font-size="18" fill="#CADCFC" letter-spacing="1">TARGET</text>
+  <path d="M300 45 A215 215 0 0 1 452 110" fill="none" stroke="#E8641B" stroke-width="2.5" marker-end="url(#ar)"/>
+  <g font-family="Barlow Condensed, Arial Narrow, Arial, sans-serif" font-size="24" fill="#F4F7FF" letter-spacing="1.5">
+    <g transform="translate(600 70)">
+      <rect width="560" height="60" fill="#131A30" stroke="#26304F"/>
+      <text x="18" y="24" font-family="IBM Plex Mono, monospace" font-size="13" fill="#A3AFCB">01</text><text x="18" y="48">PARK</text>
+      <text x="130" y="38" font-family="Barlow, Arial, sans-serif" font-size="16" fill="#CADCFC" letter-spacing="0">Dormant at 865 km. Camera earning between jobs.</text>
+    </g>
+    <g transform="translate(600 140)">
+      <rect width="560" height="60" fill="#131A30" stroke="#26304F"/>
+      <text x="18" y="24" font-family="IBM Plex Mono, monospace" font-size="13" fill="#A3AFCB">02</text><text x="18" y="48">WAKE</text>
+      <text x="130" y="38" font-family="Barlow, Arial, sans-serif" font-size="16" fill="#CADCFC" letter-spacing="0">Tasking received against a catalog object in plane.</text>
+    </g>
+    <g transform="translate(600 210)">
+      <rect width="560" height="60" fill="#131A30" stroke="#26304F"/>
+      <text x="18" y="24" font-family="IBM Plex Mono, monospace" font-size="13" fill="#A3AFCB">03</text><text x="18" y="48">PHASE</text>
+      <text x="130" y="38" font-family="Barlow, Arial, sans-serif" font-size="16" fill="#CADCFC" letter-spacing="0">Drop 25 km, lap forward, climb to match the target.</text>
+    </g>
+    <g transform="translate(600 280)">
+      <rect width="560" height="60" fill="#131A30" stroke="#E8641B"/>
+      <text x="18" y="24" font-family="IBM Plex Mono, monospace" font-size="13" fill="#A3AFCB">04</text><text x="18" y="48" fill="#E8641B">CAPTURE</text>
+      <text x="130" y="38" font-family="Barlow, Arial, sans-serif" font-size="16" fill="#CADCFC" letter-spacing="0">Characterize the tumble. Mechanical grapple.</text>
+    </g>
+    <g transform="translate(600 350)">
+      <rect width="560" height="60" fill="#131A30" stroke="#26304F"/>
+      <text x="18" y="24" font-family="IBM Plex Mono, monospace" font-size="13" fill="#A3AFCB">05</text><text x="18" y="48">DISPOSE</text>
+      <text x="130" y="38" font-family="Barlow, Arial, sans-serif" font-size="16" fill="#CADCFC" letter-spacing="0">Deorbit assist, boost to disposal orbit, or handoff.</text>
+    </g>
+    <g transform="translate(600 420)">
+      <rect width="560" height="60" fill="#131A30" stroke="#26304F"/>
+      <text x="18" y="24" font-family="IBM Plex Mono, monospace" font-size="13" fill="#A3AFCB">06</text><text x="18" y="48">RETURN</text>
+      <text x="130" y="38" font-family="Barlow, Arial, sans-serif" font-size="16" fill="#CADCFC" letter-spacing="0">Release, climb back to park. Repeat up to 45 times per tank.</text>
+    </g>
+  </g>
+</svg>
